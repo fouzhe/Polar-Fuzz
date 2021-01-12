@@ -3,6 +3,8 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
+char buf[1024];
+
 int main(int argc, char *argv[])
 {
     if(argc != 2)
