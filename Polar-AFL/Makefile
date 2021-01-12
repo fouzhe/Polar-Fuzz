@@ -47,7 +47,8 @@ COMM_HDR    = alloc-inl.h config.h debug.h types.h
 all: test_x86 $(PROGS) afl-as test_build all_done
 	$(MAKE) -C llvm_mode AFL_TRACE_PC=1
 
-demo: $(MAKE) -C demo all
+demo: 
+	$(MAKE) -C demo all
 
 ifndef AFL_NO_X86
 
